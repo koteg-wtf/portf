@@ -1,0 +1,98 @@
+<div class="grd-step-col11">
+    <h1 class="m-text-color-blue gm-uppercase">{{pageHeader}}</h1>
+
+    <div class="gm-text-left">
+        {{#each pageDescription}}
+            <p>{{.}}</p>
+        {{/each}}
+    </div>
+</div>
+
+<div class="grd-step-col6 gm-text-left">
+    {{#each resume}}
+        {{#if firstColumn}}
+            <section class="gm-offset-bottom-x1">
+                <h2 class="m-text-color-blue gm-uppercase">{{name}}</h2>
+
+                <p>
+                    {{#each description}}
+                        {{{.}}}<br/>
+                    {{/each}}
+                </p>
+
+                {{#if employments}}
+                    {{#each employments}}
+                        <article class="b-employment-history-item">
+                            <p>
+                                <b>{{company.name}}</b>, {{company.city}}, {{company.country}}. <br/>
+                                {{company.position}}, {{company.dateFrom}} &mdash; {{company.dateTill}}
+                            </p>
+
+                            <b>{{../miscLangs.duties}}</b>
+                            <ul>
+                                {{#each duties}}
+                                    <li>{{.}}</li>
+                                {{/each}}
+                            </ul>
+                        </article>
+                    {{/each}}
+                {{/if}}
+            </section>
+        {{/if}}
+    {{/each}}
+</div>
+
+<div class="grd-step-col6 gm-text-left">
+    {{#each resume}}
+        {{#if secondColumn}}
+            <section class="gm-offset-bottom-x1">
+                <h2 class="m-text-color-blue gm-uppercase">{{name}}</h2>
+
+                <p>
+                    {{#each description}}
+                        {{{.}}}<br/>
+                    {{/each}}
+                </p>
+
+                {{#if generalSkills}}
+                    <h3 class="m-text-color-blue">{{miscLangs.generalSkills}}</h3>
+
+                    <div class="gm-offset-bottom-x1">
+                        <ul class="gm-list-to-menu">
+                            {{#each generalSkills}}
+                                <li class="b-skills-item">
+                                    <b class="e-skill gm-uppercase">{{name}}:</b>
+                                    <span class="e-stars m-stars-{{stars}}">{{level}}</span>
+                                </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                {{/if}}
+
+                {{#if subSkills}}
+                    <h3 class="m-text-color-blue">{{miscLangs.additionalSkills}}</h3>
+
+                    <p>
+                        {{#each subSkills}}
+                            <span class="e-sub-skill">{{.}}</span>
+                        {{/each}}
+                    </p>
+                {{/if}}
+
+                {{#if langs}}
+                    <ul>
+                        {{#each langs}}
+                            <li><b>{{name}}:</b> {{level}}</li>
+                        {{/each}}
+                    </ul>
+                {{/if}}
+            </section>
+        {{/if}}
+    {{/each}}
+</div>
+
+{{!--
+<div class="grd-step-col11">
+  <button id="printBtn" class="e-button m-button-default">Print</button>
+</div>
+--}}

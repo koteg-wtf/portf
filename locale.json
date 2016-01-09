@@ -1,0 +1,357 @@
+{
+  "sections" : {
+    "sidebar": {
+      "userPic": "./images/userpic.jpg",
+      "username": "Iaroslav Barakhovskyi",
+      "startPage": "#/",
+      "userDescription": [
+        "Hello! I am Front-End Developer who likes to complex projects, beautiful and clear code, NodeJS/React/Backbone, motorcycles and tattoos."
+      ],
+      "mainMenu": [
+        {
+          "name": "About Me",
+          "link": "#/about",
+          "visible": true
+        },
+        {
+          "name": "Blog",
+          "link": "#/blog",
+          "visible": false
+        },
+        {
+          "name": "Portfolio",
+          "link": "#/folio",
+          "visible": true
+        },
+        {
+          "name": "Contacts",
+          "link": "#/contacts",
+          "visible": true
+        }
+      ],
+      "socialMenu": [
+        {
+          "id": "vk",
+          "name": "VK",
+          "link": "https://vk.com/personafour"
+        },
+        {
+          "id": "tw",
+          "name": "Twitter",
+          "link": "https://twitter.com/yar_persona4"
+        },
+        {
+          "id": "gp",
+          "name": "Google+",
+          "link": "https://plus.google.com/u/0/+YaroslavBarakhovsky/"
+        },
+        {
+          "id": "in",
+          "name": "LinkedIn",
+          "link": "https://linkedin.com/in/barakhovsky"
+        },
+        {
+          "id": "gh",
+          "name": "Github",
+          "link": "https://github.com/personafour"
+        }
+      ]
+    },
+    "about": {
+      "pageHeader": "About Me",
+      "pageDescription": [
+        "Hello! My name is Iaroslav and I am HTML/CSS/JavaScript developer with extensive experience in building UI for wide spectre of web services.",
+        "Over the past two and a half years I have developed various projects. From personal websites to online banking. I have good experience with responsive markup and mobile versions of sites.",
+        "I love working with creative and intelligent people for whom price and quality of product goes hand in hand. Also I always care about quality of my code. I'm trying to make it as flexible, expendable and reusable as I can."
+      ],
+      "resume": [
+        {
+          "name": "Education",
+          "description": [
+            "<b>Taurida National V.I.Vernadsky University</b>, Simferopol, Ukraine.",
+            "Bachelor of Sience.",
+            "Graduated June 2010."
+          ],
+          "firstColumn": true
+        },
+        {
+          "name": "Employment History",
+          "description": [],
+          "firstColumn": true,
+          "miscLangs": {
+            "duties": "Personal duties"
+          },
+          "employments": [
+            {
+              "company": {
+                "name": "CS Ltd.",
+                "city": "Kharkiv",
+                "country": "Ukraine",
+                "position": "Front-End Developer",
+                "dateFrom": "June 2014",
+                "dateTill": "November 2015"
+              },
+              "duties": [
+                "Design and development of single-page applications using BackboneJS/CanJS",
+                "HTML/LESS/JS codding",
+                "Experience with Java (debugging, simple tasks)",
+                "Code refactoring",
+                "Support of existing projects",
+                "Tasks/time management of team",
+                "Code review",
+                "Creation of documentation for inner development tools"
+              ]
+            },
+            {
+              "company": {
+                "name": "Web Ukraine.",
+                "city": "Kharkiv",
+                "country": "Ukraine",
+                "position": "Markup Developer",
+                "dateFrom": "February 2013",
+                "dateTill": "June 2014"
+              },
+              "duties": [
+                "HTML codding",
+                "LESS codding (in particular the creation of mixins library)",
+                "jQuery codding (simple animations and events, jQuery plugins implementation)",
+                "Support of existing projects"
+              ]
+            },
+            {
+              "company": {
+                "name": "\"A-RT\" web agency",
+                "city": "Kharkiv",
+                "country": "Ukraine",
+                "position": "Front-End Developer",
+                "dateFrom": "November 2012",
+                "dateTill": "February 2013"
+              },
+              "duties": [
+                "HTML/CSS/JS codding",
+                "Templating with Smarty teplate engine",
+                "Web-design",
+                "Support of existing projects"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Professional Skills",
+          "description": [],
+          "secondColumn": true,
+          "miscLangs": {
+            "generalSkills": "General Skills",
+            "additionalSkills": "Additional Skills"
+          },
+          "generalSkills": [
+            {
+              "name": "HTML",
+              "level": "Advanced",
+              "stars": "good"
+            },
+            {
+              "name": "Javascript",
+              "level": "Intermediate",
+              "stars": "normal"
+            },
+            {
+              "name": "CSS",
+              "level": "Advanced",
+              "stars": "good"
+            },
+            {
+              "name": "Less",
+              "level": "Advanced",
+              "stars": "good"
+            },
+            {
+              "name": "BackboneJS",
+              "level": "Intermediate",
+              "stars": "normal"
+            },
+            {
+              "name": "CanJS",
+              "level": "Intermediate",
+              "stars": "normal"
+            },
+            {
+              "name": "Responsive Design",
+              "level": "Intermediate",
+              "stars": "normal"
+            }
+          ],
+          "subSkills": [
+            "Adobe Photoshop",
+            "Adobe Illustrator",
+            "CorelDRAW",
+            "Git",
+            "SVN",
+            "Linux",
+            "Windows"
+          ]
+        },
+        {
+          "name": "Hobbies & Interests",
+          "description": [
+            "I like play guitar and sign. Also I prefer extreme types of sport, such as rollers, bike and motorcycle riding,rope/bungee jumping."
+          ],
+          "secondColumn": true
+        },
+        {
+          "name": "Languages",
+          "description": [],
+          "secondColumn": true,
+          "langs": [
+            {
+              "name": "English",
+              "level": "Conversational"
+            },
+            {
+              "name": "Russian",
+              "level": "Native"
+            },
+            {
+              "name": "Ukrainian",
+              "level": "Fluent"
+            }
+          ]
+        }
+      ]
+    },
+    "folio": {
+      "pageHeader": "Portfolio",
+      "pageDescription": [],
+      "folio": [
+        {
+          "categoryName": "spa",
+          "categoryItems": [
+            {
+              "name": "iFOBS Landing",
+              "type": "Landing page",
+              "link": "http://csltd.com.ua/ifobs",
+              "description": [
+                "Inner project for iFOBS department of CS Ltd. company. Landing page for iFOBS products presentation. I used BackboneJS as Front-End solution.",
+                "Interesting features: parallax effect, multilingual support."
+              ],
+              "img": "./images/folio/ifobs.png"
+            },
+            {
+              "name": "iFOBS",
+              "type": "Online Banking System",
+              "link": "http://csltd.com.ua/en/our-products/for-banking/ifobs.html",
+              "description": [
+                "Main product of iFOBS department. Online banking system where people can manage their finances and accounts. Some front-end solutions were written with CanJS.",
+                "Interesting features: SPA solutions for some company clients."
+              ],
+              "img": "./images/folio/ifobsBank.png"
+            }
+          ]
+        },
+        {
+          "categoryName": "markup",
+          "categoryItems": [
+            {
+              "name": "Gorodskoy Dozor",
+              "type": "Mobile version",
+              "link": "http://m.dozor.kharkov.ua/",
+              "description": [
+                "Mobile version for the one of largest information portals in Kharkiv, Ukraine.",
+                "First experience of development for mobile devices."
+              ],
+              "img": "http://m.dozor.kharkov.ua/images/mobilelogo.png"
+            },
+            {
+              "name": "Internet representation of \"Apteka Zdorovia\" network",
+              "type": "",
+              "link": "http://mega-apteka.com/",
+              "description": [
+                "The site for one of the largest networks of pharmacies in Ukraine."
+              ],
+              "img": "http://mega-apteka.com/images/logo_n.png"
+            },
+            {
+              "name": "Iconochka",
+              "type": "Store",
+              "link": "http://iconochka.com.ua/",
+              "description": [
+                "Online store of religious goods. A distinctive feature of the project has become a streamlined workflow of creating standard solutions based on company's CRM system."
+              ],
+              "img": "./images/folio/icon.png"
+            },
+            {
+              "name": "Aktiv Dosug",
+              "type": "Store",
+              "link": "http://aktiv-dosyg.com.ua/",
+              "description": [
+
+              ],
+              "img": "http://aktiv-dosyg.com.ua/images/logo.png"
+            },
+            {
+              "name": "Be First",
+              "type": "Store",
+              "link": "http://b-1.ua/",
+              "description": [],
+              "img": "http://b-1.ua/images/logo-new.png"
+            },
+            {
+              "name": "Lampa G13",
+              "type": "Informational",
+              "link": "http://lampag13.ru/",
+              "description": [],
+              "img": "http://lampag13.ru/images/logo.png"
+            },
+            {
+              "name": "Himalayan Salt",
+              "type": "Informational",
+              "link": "http://gimalay-salt.ru/",
+              "description": [],
+              "img": "./images/folio/salt.png"
+            },
+            {
+              "name": "Inter Lift",
+              "type": "Informational",
+              "link": "http://inter-lift.com.ua/",
+              "description": [],
+              "img": "http://inter-lift.com.ua/images/logo.png"
+            },
+            {
+              "name": "Klubnika",
+              "type": "Informational",
+              "link": "http://klubnika31.demowww.com/",
+              "description": [],
+              "img": ""
+            }
+          ]
+        },
+        {
+          "categoryName": "miscellaneous",
+          "categoryItems": []
+        }
+      ]
+    },
+    "contacts": {
+      "pageHeader": "Contacts",
+      "pageDescription": [],
+      "contactsList": [
+        {
+          "name": "E-mail",
+          "data": "yaroslav.barakhovsky@protonmail.com"
+        },
+        {
+          "name": "Skype",
+          "data": "keough_midnight"
+        },
+        {
+          "name": "Github",
+          "data": "github.com/personafour"
+        },
+        {
+          "name": "LinkedIn",
+          "data": "linkedin.com/in/barakhovsky"
+        }
+      ]
+    }
+  }
+}

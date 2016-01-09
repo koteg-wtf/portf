@@ -1,0 +1,74 @@
+// ---------------------------------------------------------------------------------------------------
+//                                       Corby Markup Framework
+//                            Developed by https://github.com/personafour
+//                                       Release version: 0.0.1a
+//                      Project on github: https://github.com/personafour/Corby
+// 				Project Wiki and documentation: https://github.com/personafour/Corby/wiki
+// ---------------------------------------------------------------------------------------------------
+// This file is a primary config of framework. Here you can customize basic functions, such as 
+// type of CSS Reset, box-sizing model, basic font size and many more. Read comments near variables   
+// or visit our wiki/documentation page on GitHub. Have fun!
+
+
+
+
+
+//
+// -------------------------------------------- CSS Reset --------------------------------------------
+
+// Would you like to use Normalize.css in your projects?
+@normalize: true;               // True or false
+
+// Or maybe you wish use CSS Reset (ours or your own)?
+@css-reset: true;               // True, false or custom
+
+// If you set previous variable to "custom" please uncomment section of code below and specify the
+// path to your CSS Reset file.
+
+//.customReset() {
+//    @import url("");
+//}
+
+
+// This variable sets base font size for your pages. It adds "font-size" property
+// to html element with size value from this variable. 
+@root-font-size: '';            // Pixels or empty string
+
+
+
+
+
+//
+// ------------------------------------------- Grid Setup --------------------------------------------
+
+// Here you can customize grid columns amount 
+@base-columns-amount: 16;       // Integer number
+
+// And here you can set base gutter between them
+@base-gutter: 30px;             // Integer number or pixels
+
+// With next parameter you can customize type of grid, which will be used in your project. You can use
+// "step-type" grid, "fill-type" grid or both of them. In first case grid will be build following next
+// algorithm: "N*i", where "N" is (parent width / column amount) and "i" - current value
+// of iteration counter. In second case grid will be built folowing next algorithm: "N/M", where
+// "N" is parent width and "M" is columns amount. In last case both of grids will be generated.
+@grid-type: both;
+
+
+
+
+
+//
+// ------------------------------- UCL (Usefull Classes Library) Setup -------------------------------
+
+// Corby Framework uses personal library of usefull classes, which includes some global modificators,
+// text styles and many more. You can inspect "usefull.less" file to see all capabilities. Also, you
+// can use your own library of usefull classes instead our or use both of them.
+@ucl: native;                   // Native, custom or both
+
+// If you set previous variable to "custom" or "both" please uncomment section of code below and
+// specify the path to your custom library.
+
+//.customUCL() { 
+//    @import url("");
+//}

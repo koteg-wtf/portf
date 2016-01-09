@@ -1,0 +1,86 @@
+// ---------------------------------------------------------------------------------------------------
+//                                       Corby Markup Framework
+//                            Developed by https://github.com/personafour
+//                                       Release version: 0.0.1a
+//                      Project on github: https://github.com/personafour/Corby
+//                 Project Wiki and documentation: https://github.com/personafour/Corby/wiki
+// ---------------------------------------------------------------------------------------------------
+
+//
+// Corby Grid System built on inline-blocks usage. Such approach allows you to avoid the situation
+// when order of construction of blocks is disturbed because of different height of same type blocks.
+// Follow next JsFiddle link, to see example of the issue:
+// TODO: need to create an example of float grid with different height of same blocks
+
+//
+// Primary wrap for grid containers.
+// Next code removes small vertical and horizontal indents between children inline-type blocks
+.grd-row {
+    font-size: 0; 
+    line-height: 0;
+    letter-spacing: -1px;
+}
+
+// 
+// Here added some base styles for grid's containers. 
+// Because of inheritance of text properties we need to set them to default values.
+// And finally we will set offsets inside and outside of container.
+[class*="grd-fill"],
+[class*="grd-step"] {
+    display: inline-block;
+    vertical-align: top;
+    font-size: @base-font-size;
+    line-height: @base-line-height;
+    letter-spacing: normal;
+    padding: 0 (@base-gutter/2);
+    margin: 0 0 @base-gutter/2;
+
+//
+// We need add negative margins for primary wrap if we want to use it inside of our grid's 
+// containers without increasing of paddings.
+    .grd-row {
+        margin: 0 @base-gutter/-2;
+    }
+}
+
+//
+// Calling "Build System Of Grid" Mixin
+.buildGrid();
+
+// 
+// -------------------------------------- Build System Of Grid ---------------------------------------
+.buildGrid() {
+    //
+    // Inner Mixins Call
+    .buildFillCols();
+    .buildStepCols();
+
+// 
+// "Fill-columns" Grid. 
+// The idea of this grid 
+// 
+    .buildFillCols(@index: 1) when (@grid-type = fill), (@grid-type = both) {
+        // Let's calculate the minimum width of the column
+        @minimum-column-width: unit((100 / @index),%);
+
+        .grd-fill-col@{index} {
+            width: @minimum-column-width;
+        }
+        & when (@index = @base-columns-amount) {}
+        & when (@index < @base-columns-amount){
+            .buildFillCols(@index+1);
+        }
+    }
+    .buildStepCols(@index: 1) when (@grid-type = step), (@grid-type = both) {
+        // Let's calculate the minimum width of the column
+        @minimum-column-width:  unit((100/@base-columns-amount),%);
+
+        .grd-step-col@{index} {
+            width: @minimum-column-width*@index;
+        }
+        & when (@index = @base-columns-amount) {}
+        & when (@index < @base-columns-amount) {
+            .buildStepCols(@index+1);
+        }
+    }
+}

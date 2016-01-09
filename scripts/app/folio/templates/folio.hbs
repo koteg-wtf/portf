@@ -1,0 +1,35 @@
+<div class="grd-step-col16">
+    <h1 class="m-text-color-blue gm-uppercase">{{pageHeader}}</h1>
+
+    <div class="gm-text-left">
+        {{#each pageDescription}}
+            <p>{{.}}</p>
+        {{/each}}
+    </div>
+
+    {{#each folio}}
+        <h2 class="m-text-color-blue gm-uppercase">{{categoryName}}</h2>
+
+        <div class="grd-row gm-text-left">
+            {{#each categoryItems}}
+                <div class="grd-fill-col3 gm-text-top">
+                    <div class="b-folio-item">
+                        <div class="e-folio-item-img">
+                            <img src="{{#if img}}{{img}}{{else}}./images/icons/folioCap.png{{/if}}" alt="{{name}}"/>
+                        </div>
+
+                        <div class="b-folio-item-data">
+                            <h3>{{name}}{{#if type}} | <span class="m-text-color-blue">{{type}}</span>{{/if}}</h3>
+                            <p class="m-external-link"><a href="{{link}}" class="gm-text-middle" target="_blank">{{link}}</a></p>
+                            <div class="e-folio-description">
+                                {{#each description}}
+                                    <p>{{.}}</p>
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    {{/each}}
+</div>

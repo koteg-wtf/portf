@@ -1,0 +1,16 @@
+<div class="grd-step-col11">
+    <h1 class="m-text-color-blue gm-uppercase">{{pageHeader}}</h1>
+
+    {{#if pageDescription}}
+        {{#each pageDescription}}
+            <p>{{.}}</p>
+        {{/each}}
+    {{/if}}
+
+    {{#each contactsList}}
+        <div class="gm-text-left">
+            <h2 class="m-text-color-blue">{{name}}</h2>
+            <h3>{{data}}</h3>
+        </div>
+    {{/each}}
+</div>

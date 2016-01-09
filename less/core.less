@@ -1,0 +1,27 @@
+// ---------------------------------------------------------------------------------------------------
+//                                       Corby Markup Framework
+//                            Developed by https://github.com/personafour
+//                                       Release version: 0.0.1a
+//                      Project on github: https://github.com/personafour/Corby
+//                 Project Wiki and documentation: https://github.com/personafour/Corby/wiki
+// ---------------------------------------------------------------------------------------------------
+
+.gradient (@startColor: #eee, @endColor: white) {
+  background-color: @startColor;
+  background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+  background: -webkit-linear-gradient(top, @startColor, @endColor);
+  background: -moz-linear-gradient(top, @startColor, @endColor);
+  background: -ms-linear-gradient(top, @startColor, @endColor);
+  background: -o-linear-gradient(top, @startColor, @endColor);
+}
+
+//
+// Usefull Classes Library Import Mixin
+.importUCL() {
+  & when (@ucl = native), (@ucl = both) {
+    @import url('usefull.less');
+  }
+  & when (@ucl = custom), (@ucl = both) {
+    .customUCL()
+  }
+}

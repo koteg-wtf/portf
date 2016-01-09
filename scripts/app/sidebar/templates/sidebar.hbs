@@ -1,0 +1,31 @@
+<div class="wrp-sidebar">
+    <a href="{{startPage}}" class="e-userpic">
+        <img src="{{userPic}}" alt="{{username}}"/>
+    </a>
+
+    <span class="e-username">{{username}}</span>
+
+    <p class="e-user-description">
+        {{#each userDescription}}
+            {{.}} <br/>
+        {{/each}}
+    </p>
+
+    <menu class="b-main-menu gm-list-to-menu">
+        {{#each mainMenu}}
+            {{#if visible}}
+                <li class="b-main-menu-element">
+                    <a href="{{link}}" class="e-main-menu-link">{{name}}</a>
+                </li>
+            {{/if}}
+        {{/each}}
+    </menu>
+
+    <menu class="b-social gm-list-to-menu">
+        {{#each socialMenu}}
+            <li class="b-social-element">
+                <a href="{{link}}" target="_blank" class="e-social-link m-social-{{id}}">{{name}}</a>
+            </li>
+        {{/each}}
+    </menu>
+</div>
