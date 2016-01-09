@@ -26,4 +26,4 @@ Before opening any issue, please search for existing one. If you found a bug in 
 Copyright (c) 2016 Yaroslav Barakhovsky
 Licensed under the [MIT License](LICENSE).
 
-[issues]: https://github.com/personafour/Corby/issues "Corby Issues"
+[issues]: https://github.com/personafour/simpleResume/issues "Corby Issues"
