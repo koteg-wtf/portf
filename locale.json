@@ -1,11 +1,11 @@
 {
   "sections" : {
     "sidebar": {
-      "userPic": "./images/userpic.jpg",
-      "username": "Iaroslav Barakhovskyi",
+      "userPic": "./images/mypic.jpg",
+      "username": "Kostyantyn Harmash",
       "startPage": "#/",
       "userDescription": [
-        "Hello! I am Front-End Developer who likes to complex projects, beautiful and clear code, NodeJS/React/Backbone, motorcycles and tattoos."
+        "Hello! I am some autistic (like Junior, but have many skills) Project Manager without food. I need some money."
       ],
       "mainMenu": [
         {
