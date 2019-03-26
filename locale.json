@@ -1,7 +1,7 @@
 {
   "sections" : {
     "sidebar": {
-      "userPic": "./images/userpic.jpg",
+      "userPic": "https://koteg-wtf.github.io/portf/images/userpic.jpg",
       "username": "Kostyantyn Harmash",
       "startPage": "#/",
       "userDescription": [
