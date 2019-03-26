@@ -1,7 +1,7 @@
 {
   "sections" : {
     "sidebar": {
-      "userPic": ".blob/master/images/userpic.jpg",
+      "userPic": "blob/master/images/userpic.jpg",
       "username": "Kostyantyn Harmash",
       "startPage": "#/",
       "userDescription": [
